@@ -221,7 +221,7 @@ client.cancelOrder(new CancelOrderRequest("LINKETH", 123015L));
 In order to be able to withdraw programatically, please enable the `Enable Withdrawals` option in the API settings.
 
 ```java
-client.withdraw("ETH", "0x123", "0.1", null);
+client.withdraw("ETH", "0x123", "0.1", null, null, null);
 ```
 
 #### Fetch withdraw history

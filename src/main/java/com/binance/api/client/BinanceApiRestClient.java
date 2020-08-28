@@ -249,8 +249,9 @@ public interface BinanceApiRestClient {
    * @param amount amount to withdraw
    * @param name description/alias of the address
    * @param addressTag Secondary address identifier for coins like XRP,XMR etc.
+   * @param network Network for multiplatform tokens like USDT. Contains network ticker, e.g. ETH, TRX.
    */
-  WithdrawResult withdraw(String asset, String address, String amount, String name, String addressTag);
+  WithdrawResult withdraw(String asset, String address, String amount, String name, String addressTag, String network);
 
   /**
    * Fetch account deposit history.
